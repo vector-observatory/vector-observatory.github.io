@@ -1,0 +1,303 @@
+/* Vector Observatory: grey wireframe style (mock-up version 2).
+   Colours are placeholders until the visual identity is agreed. */
+
+:root {
+  --vo-ink: #222222;
+  --vo-text: #333333;
+  --vo-muted: #5f5f5f;
+  --vo-line: #c8c8c8;
+  --vo-panel: #f2f2f2;
+  --vo-radius: 8px;
+
+  --vp-c-brand-1: #222222;
+  --vp-c-brand-2: #444444;
+  --vp-c-brand-3: #222222;
+  --vp-c-brand-soft: rgba(34, 34, 34, 0.08);
+  --vp-c-text-1: #222222;
+  --vp-c-text-2: #5f5f5f;
+  --vp-button-brand-bg: #222222;
+  --vp-button-brand-hover-bg: #444444;
+}
+
+.dark {
+  --vo-ink: #f2f2f2;
+  --vo-text: #e0e0e0;
+  --vo-muted: #a8a8a8;
+  --vo-line: #4a4a4a;
+  --vo-panel: #2a2a2a;
+  --vp-c-brand-1: #f2f2f2;
+  --vp-c-brand-2: #d0d0d0;
+  --vp-c-brand-3: #f2f2f2;
+  --vp-c-text-1: #f2f2f2;
+  --vp-c-text-2: #a8a8a8;
+}
+
+/* ---------- Navigation ---------- */
+
+.VPNavBar .VPNavBarMenuLink.active {
+  background: var(--vo-panel);
+  border-radius: 6px;
+}
+
+.vo-datalab-button {
+  display: inline-block;
+  margin-left: 16px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: #222222;
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.vo-datalab-button:hover { background: #444444; }
+.dark .vo-datalab-button { background: #f2f2f2; color: #222222 !important; }
+
+@media (max-width: 767px) {
+  .vo-datalab-button { display: none; }
+}
+
+/* ---------- Page container (pages with layout: page) ---------- */
+
+.vo-container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 40px 24px 56px;
+  color: var(--vo-text);
+}
+
+.vo-container h2.vo-section-title {
+  margin: 40px 0 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--vo-ink);
+}
+
+/* ---------- Home: hero ---------- */
+
+.vo-hero {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.vo-hero h1 {
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--vo-ink);
+  margin: 0 0 16px;
+}
+
+.vo-lead {
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--vo-muted);
+  margin: 0 0 12px;
+}
+
+.vo-stats {
+  font-weight: 700;
+  color: var(--vo-ink);
+  margin: 0 0 24px;
+}
+.vo-stats span + span::before {
+  content: '\00b7';
+  margin: 0 12px;
+}
+
+.vo-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+
+.vo-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: var(--vo-radius);
+  border: 1.5px solid #222222;
+  font-weight: 600;
+  text-decoration: none;
+}
+.vo-btn-primary { background: #222222; color: #ffffff !important; }
+.vo-btn-secondary { background: transparent; color: var(--vo-ink) !important; border-color: var(--vo-ink); }
+.vo-btn-primary:hover { background: #444444; }
+
+/* ---------- Cards ---------- */
+
+.vo-card {
+  display: block;
+  border: 1px solid var(--vo-line);
+  border-radius: var(--vo-radius);
+  padding: 16px 20px;
+  color: var(--vo-text);
+  text-decoration: none !important;
+  background: var(--vp-c-bg);
+  transition: border-color 0.15s;
+}
+a.vo-card:hover { border-color: var(--vo-ink); }
+
+.vo-card-title {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--vo-ink);
+  margin: 0 0 4px;
+}
+.vo-card-text {
+  display: block;
+  font-size: 14px;
+  color: var(--vo-muted);
+  line-height: 1.5;
+}
+.vo-card-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--vo-ink);
+}
+.vo-card-link::after { content: ' \2192'; }
+
+.vo-species { display: flex; gap: 16px; align-items: center; margin-bottom: 16px; }
+.vo-species:last-child { margin-bottom: 0; }
+
+.vo-img {
+  flex: 0 0 120px;
+  height: 88px;
+  border: 1px solid var(--vo-line);
+  background:
+    linear-gradient(to top right, transparent calc(50% - 0.5px), var(--vo-line), transparent calc(50% + 0.5px)),
+    linear-gradient(to bottom right, transparent calc(50% - 0.5px), var(--vo-line), transparent calc(50% + 0.5px)),
+    var(--vo-panel);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--vo-muted);
+}
+
+.vo-grid { display: grid; gap: 16px; }
+.vo-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.vo-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.vo-grid-4 { grid-template-columns: repeat(4, 1fr); }
+.vo-grid-6 { grid-template-columns: repeat(6, 1fr); }
+
+.vo-step { display: flex; gap: 12px; align-items: baseline; }
+.vo-step-number { font-weight: 700; color: var(--vo-ink); }
+
+/* ---------- Doc pages (Data, API, placeholders) ---------- */
+
+.vp-doc .vo-grid { margin: 16px 0 8px; }
+.vp-doc a.vo-card { color: var(--vo-text); }
+.vp-doc .vo-card p { margin: 0; }
+.vp-doc h2 { border-top: none; margin-top: 32px; padding-top: 0; }
+
+.vo-intro { font-size: 18px; color: var(--vo-muted); margin-top: 8px; }
+
+.vo-note {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--vo-muted);
+}
+
+.vo-two-col {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.vo-run { display: flex; gap: 12px; align-items: baseline; }
+.vo-run strong { color: var(--vo-ink); white-space: nowrap; }
+
+.vo-related {
+  display: block;
+  border: 1.5px solid var(--vo-ink);
+  border-radius: var(--vo-radius);
+  padding: 10px 16px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: var(--vo-ink) !important;
+  text-decoration: none !important;
+}
+.vo-related::after { content: ' \2192'; }
+
+.vo-placeholder {
+  border: 1px dashed var(--vo-line);
+  border-radius: var(--vo-radius);
+  padding: 16px 20px;
+  color: var(--vo-muted);
+  background: var(--vo-panel);
+}
+
+/* ---------- Footer ---------- */
+
+.vo-footer {
+  border-top: 1px solid var(--vo-line);
+  background: var(--vo-panel);
+}
+.vo-footer-inner {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.vo-partners { display: flex; gap: 12px; flex-wrap: wrap; }
+.vo-partner {
+  border: 1px solid var(--vo-line);
+  background: var(--vp-c-bg);
+  padding: 10px 22px;
+  font-size: 14px;
+  color: var(--vo-muted);
+}
+.vo-footer-right { text-align: right; }
+.vo-footer-links { display: flex; gap: 20px; justify-content: flex-end; flex-wrap: wrap; }
+.vo-footer-links a { font-weight: 700; font-size: 14px; color: var(--vo-ink); }
+.vo-footer-note { margin: 4px 0 0; font-size: 13px; font-style: italic; color: var(--vo-muted); }
+
+/* Pages with a sidebar: keep the footer clear of it on wide screens. */
+@media (min-width: 960px) {
+  .Layout:has(.VPSidebar) .vo-footer { padding-left: var(--vp-sidebar-width); }
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 959px) {
+  .vo-hero, .vo-two-col { grid-template-columns: 1fr; }
+  .vo-grid-4, .vo-grid-6 { grid-template-columns: repeat(2, 1fr); }
+  .vo-grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .vo-hero h1 { font-size: 34px; }
+}
+@media (max-width: 559px) {
+  .vo-grid-2, .vo-grid-3, .vo-grid-4, .vo-grid-6 { grid-template-columns: 1fr; }
+  .vo-footer-right { text-align: left; }
+  .vo-footer-links { justify-content: flex-start; }
+}
+
+/* ---------- Adjustments after visual check ---------- */
+
+.vo-stats span { white-space: nowrap; }
+
+/* Wider content area on doc pages, to fit card grids. */
+.VPDoc .content-container { max-width: none !important; }
+.VPDoc:not(.has-sidebar) .container { max-width: 1152px !important; }
+.VPDoc:not(.has-sidebar) .content { max-width: none !important; }
+.VPDoc.has-sidebar .container { max-width: 1104px !important; }
+
+.vp-doc a.vo-card-link, .vp-doc a.vo-related { text-decoration: none; }
+
+.vo-breadcrumb { font-size: 14px; color: var(--vo-muted); margin: 0 0 8px !important; }
+.vp-doc .vo-breadcrumb a { color: var(--vo-muted); text-decoration: none; }
+
+/* Keep grids inside narrow screens. */
+.vo-hero > div, .vo-two-col > div { min-width: 0; }
+@media (max-width: 559px) {
+  .vo-stats span { display: block; }
+  .vo-stats span + span::before { content: none; }
+  .vo-species { flex-direction: column; align-items: flex-start; }
+  .vo-img { flex-basis: auto; width: 100%; }
+}
