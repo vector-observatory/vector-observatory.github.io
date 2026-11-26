@@ -11,3 +11,5 @@ aside: false
 <p class="vo-intro">The latest technical and scientific updates from the Vector Observatory.</p>
 
 <div class="vo-placeholder">Placeholder page. Content to be added.</div>
+
+Test edit through a pull request.
