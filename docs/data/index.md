@@ -1,52 +1,24 @@
----
-title: Data
----
-
-<p class="vo-breadcrumb"><a href="/">Home</a> / Data</p>
-
 # Data
 
-<p class="vo-intro">Whole-genome data from mosquitoes collected from natural populations in affected countries.</p>
+Whole-genome data from mosquitoes collected from natural populations in affected countries.
 
 ## Data resources
 
-<div class="vo-grid vo-grid-3">
-  <div class="vo-card" id="anopheles-gambiae-complex">
-    <span class="vo-card-title">An. gambiae complex</span>
-    <span class="vo-card-text">21,246 genomes · 32 countries</span>
-    <a class="vo-card-link" href="#how-to-access-the-data">Browse · Access</a>
-  </div>
-  <div class="vo-card" id="anopheles-funestus-subgroup">
-    <span class="vo-card-title">An. funestus subgroup</span>
-    <span class="vo-card-text">3,964 genomes · 16 countries</span>
-    <a class="vo-card-link" href="#how-to-access-the-data">Browse · Access</a>
-  </div>
-  <div class="vo-card" id="anopheles-stephensi">
-    <span class="vo-card-title">An. stephensi</span>
-    <span class="vo-card-text">639 genomes · 11 countries</span>
-    <a class="vo-card-link" href="#how-to-access-the-data">Browse · Access</a>
-  </div>
-  <div class="vo-card" id="anopheles-minimus">
-    <span class="vo-card-title">An. minimus</span>
-    <span class="vo-card-text">302 genomes · 1 country</span>
-    <a class="vo-card-link" href="#how-to-access-the-data">Browse · Access</a>
-  </div>
-  <div class="vo-card" id="anopheles-dirus">
-    <span class="vo-card-title">An. dirus</span>
-    <span class="vo-card-text">540 genomes · 3 countries</span>
-    <a class="vo-card-link" href="#how-to-access-the-data">Browse · Access</a>
-  </div>
-  <div class="vo-card" id="aedes">
-    <span class="vo-card-title">Aedes</span>
-    <span class="vo-card-text">In preparation</span>
-    <a class="vo-card-link" href="/contact">Register interest</a>
-  </div>
-</div>
+| Data resource | Genomes | Countries |
+| --- | ---: | ---: |
+| *Anopheles gambiae* complex | 21,246 | 32 |
+| *Anopheles funestus* subgroup | 3,964 | 16 |
+| *Anopheles stephensi* | 639 | 11 |
+| *Anopheles minimus* | 302 | 1 |
+| *Anopheles dirus* | 540 | 3 |
+| *Aedes* | In preparation | |
+
+## Terms of use
+
+Terms of use apply to some datasets, but all data can be accessed and analysed for public health and educational purposes. See [Terms of use](/terms).
 
 ## How to access the data
 
-<div class="vo-grid vo-grid-3">
-  <div class="vo-card vo-step"><span class="vo-step-number">1</span><span>Read the <a href="/terms">terms of use and data-sharing approach</a></span></div>
-  <div class="vo-card vo-step"><span class="vo-step-number">2</span><span>Request vector data access</span></div>
-  <div class="vo-card vo-step"><span class="vo-step-number">3</span><span>Analyse in DataLab or with the <a href="/api/">API</a></span></div>
-</div>
+1. Read the [terms of use](/terms) and the data-sharing approach.
+2. Request vector data access.
+3. Analyse the data in DataLab or with the [API](/api/).

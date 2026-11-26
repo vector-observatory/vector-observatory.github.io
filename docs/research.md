@@ -1,13 +1,7 @@
----
-title: Research
-sidebar: false
-aside: false
----
-
-<p class="vo-breadcrumb"><a href="/">Home</a> / Research</p>
-
 # Research
 
-<p class="vo-intro">The observatory is powering new research into the biology and control of disease vectors. Publications are listed by year.</p>
+The observatory is powering new research into the biology and control of disease vectors.
 
-<div class="vo-placeholder">Placeholder page. Content to be added.</div>
+## Publications
+
+*Publications to be added, listed by year (2014 to 2025).*

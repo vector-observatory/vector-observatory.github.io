@@ -6,7 +6,6 @@ export default defineConfig({
     'Data for mosquito research, surveillance and control: Anopheles and Aedes genomic data, tools and training.',
   lang: 'en-GB',
   cleanUrls: true,
-  lastUpdated: false,
 
   head: [
     ['link', { rel: 'icon', href: '/logo.svg' }],
@@ -17,36 +16,34 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/logo.svg',
-    siteTitle: 'Vector Observatory',
 
     nav: [
       { text: 'Data', link: '/data/' },
       { text: 'API', link: '/api/' },
       { text: 'Pipelines', link: '/pipelines' },
       { text: 'Training', link: '/training' },
-      { text: 'Collaborations', link: '/collaborations' },
-      { text: 'Research', link: '/research' },
-      { text: 'Updates', link: '/updates' }
+      {
+        text: 'Community',
+        items: [
+          { text: 'Collaborations', link: '/collaborations' },
+          { text: 'Research', link: '/research' },
+          { text: 'Updates', link: '/updates' }
+        ]
+      },
+      {
+        text: 'Resources',
+        items: [
+          { text: 'Terms of use', link: '/terms' },
+          { text: 'How to cite', link: '/cite' },
+          { text: 'About', link: '/about' },
+          { text: 'Contact', link: '/contact' }
+        ]
+      }
     ],
 
-    sidebar: {
-      '/data/': [
-        {
-          text: 'In this section',
-          items: [
-            { text: 'Overview', link: '/data/' },
-            { text: 'Anopheles gambiae complex', link: '/data/#anopheles-gambiae-complex' },
-            { text: 'Anopheles funestus subgroup', link: '/data/#anopheles-funestus-subgroup' },
-            { text: 'Anopheles stephensi', link: '/data/#anopheles-stephensi' },
-            { text: 'Anopheles minimus', link: '/data/#anopheles-minimus' },
-            { text: 'Anopheles dirus', link: '/data/#anopheles-dirus' },
-            { text: 'Aedes (in preparation)', link: '/data/#aedes' },
-            { text: 'Terms of use', link: '/terms' },
-            { text: 'Data user guide', link: '/data/#how-to-access-the-data' }
-          ]
-        }
-      ]
-    },
+    socialLinks: [{ icon: 'github', link: 'https://github.com/vector-observatory' }],
+
+    search: { provider: 'local' },
 
     editLink: {
       pattern:
@@ -54,7 +51,9 @@ export default defineConfig({
       text: 'Edit this page on GitHub'
     },
 
-    outline: false,
-    docFooter: { prev: false, next: false }
+    footer: {
+      message: 'An independent platform, with MalariaGEN among its partners.',
+      copyright: 'Vector Observatory contributors'
+    }
   }
 })

@@ -1,13 +1,5 @@
----
-title: Data use terms
-sidebar: false
-aside: false
----
+# Terms of use
 
-<p class="vo-breadcrumb"><a href="/">Home</a> / Data use terms</p>
+Terms of use apply to some datasets, but all data can be accessed and analysed for public health and educational purposes.
 
-# Data use terms
-
-<p class="vo-intro">Terms of use apply to some datasets, but all data can be accessed and analysed for public health and educational purposes.</p>
-
-<div class="vo-placeholder">Placeholder page. Content to be added.</div>
+*Full terms and data-sharing approach to be added.*

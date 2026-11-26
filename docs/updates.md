@@ -1,15 +1,5 @@
----
-title: Updates
-sidebar: false
-aside: false
----
-
-<p class="vo-breadcrumb"><a href="/">Home</a> / Updates</p>
-
 # Updates
 
-<p class="vo-intro">The latest technical and scientific updates from the Vector Observatory.</p>
+The latest technical and scientific updates from the Vector Observatory.
 
-<div class="vo-placeholder">Placeholder page. Content to be added.</div>
-
-Test edit through a pull request.
+*Updates to be added.*
