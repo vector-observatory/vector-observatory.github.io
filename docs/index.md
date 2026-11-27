@@ -5,9 +5,6 @@ hero:
   name: Vector Observatory
   text: Data for mosquito research, surveillance and control
   tagline: Genomes, tools and expertise for Anopheles (malaria) and Aedes (dengue, chikungunya, Zika) mosquitoes. Data. Compute. Analysis. Training. Free at the point of use.
-  image:
-    src: /logo.svg
-    alt: Vector Observatory
   actions:
     - theme: brand
       text: Explore the data
