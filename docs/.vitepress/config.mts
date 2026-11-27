@@ -15,7 +15,6 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: '/logo.svg',
 
     nav: [
       { text: 'Organism', link: '/organism' },

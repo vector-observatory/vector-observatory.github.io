@@ -68,8 +68,9 @@
 .vp-doc .vo-cards a { text-decoration: none; color: inherit; }
 .vp-doc .vo-cards h2 { border-top: none; margin: 0; padding-top: 0; letter-spacing: normal; }
 
-/* Menu logo size. */
-.VPNavBarTitle .logo { height: 40px; }
+/* Small logo at the top right of the menu bar. */
+.vo-nav-logo { display: flex; align-items: center; justify-content: center; margin-left: 16px; width: 40px; height: 40px; border-radius: 8px; background: #1b1b1f; }
+.vo-nav-logo img { height: 34px; width: auto; }
 
 /* Publications page (mock). */
 .pub-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 20px 0 8px; }
