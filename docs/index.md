@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Vector Observatory
   text: Data for mosquito research, surveillance and control
-  tagline: Genomes, tools and expertise for Anopheles (malaria) and Aedes (dengue, chikungunya, Zika) mosquitoes. Data. Compute. Analysis. Training. Free at the point of use.
+  tagline: "[Organism-agnostic tagline: text to be confirmed]"
   actions:
     - theme: brand
       text: Explore the data
@@ -16,10 +16,11 @@ hero:
       text: GitHub
       link: https://github.com/vector-observatory
 
-features:
+# Cards shown below "The platform" (moved from the default position under the hero).
+cards:
   - icon: 🧬
     title: Data
-    details: Whole-genome data for five Anopheles groups from natural populations in malaria-endemic regions. Aedes in preparation.
+    details: "[Organism-agnostic description: text to be confirmed]"
     link: /data/
     linkText: Data resources
   - icon: 🐍
@@ -49,6 +50,12 @@ features:
     linkText: Publications
 ---
 
+<script setup>
+import { VPFeatures } from 'vitepress/theme'
+import { useData } from 'vitepress'
+const { frontmatter } = useData()
+</script>
+
 ## The platform
 
 The Vector Observatory is a collaborative effort to bring together and explore the genomes of thousands of mosquitoes, and use those data to improve disease control. It brings together genomic data, tools and expertise from across affected regions, built on equitable data sharing, open science and collaboration.
@@ -58,9 +65,11 @@ Through DataLab, users access data, cloud compute, open-source tools and APIs fr
 <div class="vo-figures">
   <div><strong>30,000+</strong><span>mosquito genomes</span></div>
   <div><strong>1,000+</strong><span>registered users</span></div>
-  <div><strong>6</strong><span>species groups (5 Anopheles, Aedes in preparation)</span></div>
+  <div><strong>[ ]</strong><span>[organism-agnostic figure: to be confirmed]</span></div>
   <div><strong>Free</strong><span>at the point of use</span></div>
 </div>
+
+<VPFeatures class="vo-cards" :features="frontmatter.cards" />
 
 ## Partners
 

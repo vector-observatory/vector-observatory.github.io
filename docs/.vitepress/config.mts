@@ -18,15 +18,16 @@ export default defineConfig({
     logo: '/logo.svg',
 
     nav: [
-      { text: 'Data', link: '/data/' },
-      { text: 'API', link: '/api/' },
+      { text: 'Organism', link: '/organism' },
+      { text: 'Interface', link: '/api/' },
+      { text: 'Datasets', link: '/data/' },
       { text: 'Pipelines', link: '/pipelines' },
       { text: 'Training', link: '/training' },
       {
         text: 'Community',
         items: [
           { text: 'Collaborations', link: '/collaborations' },
-          { text: 'Research', link: '/research' },
+          { text: 'Publications', link: '/research' },
           { text: 'Updates', link: '/updates' }
         ]
       },
@@ -40,6 +41,8 @@ export default defineConfig({
         ]
       }
     ],
+
+    outline: { level: [2, 3], label: 'On this page' },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/vector-observatory' }],
 

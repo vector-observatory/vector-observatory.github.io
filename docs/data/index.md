@@ -1,24 +1,35 @@
-# Data
+# Datasets
 
-Whole-genome data from mosquitoes collected from natural populations in affected countries.
+<p class="mock-intro">[Intro to datasets: text to be confirmed]</p>
 
-## Data resources
+## Anopheles
 
-| Data resource | Genomes | Countries |
-| --- | ---: | ---: |
-| *Anopheles gambiae* complex | 21,246 | 32 |
-| *Anopheles funestus* subgroup | 3,964 | 16 |
-| *Anopheles stephensi* | 639 | 11 |
-| *Anopheles minimus* | 302 | 1 |
-| *Anopheles dirus* | 540 | 3 |
-| *Aedes* | In preparation | |
+<p class="mock-intro">[Anopheles overview: text to be confirmed]</p>
 
-## Terms of use
+### An. gambiae complex
 
-Terms of use apply to some datasets, but all data can be accessed and analysed for public health and educational purposes. See [Terms of use](/terms).
+[Key information: text to be confirmed]
 
-## How to access the data
+### An. funestus subgroup
 
-1. Read the [terms of use](/terms) and the data-sharing approach.
-2. Request vector data access.
-3. Analyse the data in DataLab or with the [API](/api/).
+[Key information: text to be confirmed]
+
+### An. stephensi
+
+[Key information: text to be confirmed]
+
+### An. minimus
+
+[Key information: text to be confirmed]
+
+### An. dirus
+
+[Key information: text to be confirmed]
+
+### An. darlingi
+
+[Key information: text to be confirmed]
+
+## Aedes
+
+[Aedes: in preparation, text to be confirmed]

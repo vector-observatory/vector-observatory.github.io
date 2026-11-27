@@ -1,9 +1,11 @@
 # Training
 
-Training for all levels, from entry level to advanced.
+<p class="mock-intro">[Intro to training: text to be confirmed]</p>
 
-- Video lectures in English and French
-- Executable notebooks
-- Exercises
+## Anopheles
 
-*Course list to be added.*
+[Anopheles: text to be confirmed]
+
+## Aedes
+
+[Aedes: text to be confirmed]

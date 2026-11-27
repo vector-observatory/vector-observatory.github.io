@@ -1,5 +1,11 @@
 # Pipelines
 
-Open-source, reproducible workflows for processing parasite and vector genome data.
+<p class="mock-intro">[Intro to pipelines: text to be confirmed]</p>
 
-*Content to be added.*
+## Anopheles
+
+[Anopheles: text to be confirmed]
+
+## Aedes
+
+[Aedes: text to be confirmed]

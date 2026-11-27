@@ -1,32 +1,35 @@
-# API
+# Interface
 
-An open-source Python package to explore, visualise and analyse mosquito genomic data, built for cloud-native workflows.
+<p class="mock-intro">[Intro to the interface: text to be confirmed]</p>
 
-```python
-# Package name to be agreed (renaming of the current API)
-# pip install <package-name>
-import <package_name>
-data = <package_name>.Anopheles()
-```
+## Anopheles
 
-## What you can do
+[Anopheles: text to be confirmed]
 
-- Access data from the cloud
-- Explore samples by country, date and species
-- Compare allele frequencies by region and time
-- Population structure (PCA)
-- Genome-wide selection scans
-- Haplotype clustering and networks
+### An. gambiae complex
 
-## Where to run it
+[Links and key information: text to be confirmed]
 
-| Where | Notes |
-| --- | --- |
-| DataLab | In the browser, free, from any laptop |
-| Google Colab | Free, for exploring |
-| Your own computer | Install with pip |
+### An. funestus subgroup
 
-## Related
+[Links and key information: text to be confirmed]
 
-- [Pipelines](/pipelines)
-- [Training: entry level and advanced](/training)
+### An. stephensi
+
+[Links and key information: text to be confirmed]
+
+### An. minimus
+
+[Links and key information: text to be confirmed]
+
+### An. dirus
+
+[Links and key information: text to be confirmed]
+
+### An. darlingi
+
+[Links and key information: text to be confirmed]
+
+## Aedes
+
+[Aedes: text to be confirmed]

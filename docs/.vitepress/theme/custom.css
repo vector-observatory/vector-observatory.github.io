@@ -61,3 +61,27 @@
 @media (min-width: 960px) {
   .VPHero .image-container { width: 460px; height: 460px; }
 }
+
+/* Feature cards placed inside the home content, below "The platform". */
+.vo-cards { padding: 0 !important; margin: 24px 0 8px; }
+.vo-cards .container { max-width: none !important; }
+.vp-doc .vo-cards a { text-decoration: none; color: inherit; }
+.vp-doc .vo-cards h2 { border-top: none; margin: 0; padding-top: 0; letter-spacing: normal; }
+
+/* Menu logo size. */
+.VPNavBarTitle .logo { height: 40px; }
+
+/* Publications page (mock). */
+.pub-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 20px 0 8px; }
+.pub-tools input, .pub-tools select { border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 6px 10px; background: var(--vp-c-bg); color: var(--vp-c-text-1); font-size: 14px; }
+.pub-search { flex: 1 1 260px; }
+.pub-count { color: var(--vp-c-text-2); font-size: 14px; margin-left: auto; }
+.pub-featured { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 12px; }
+.pub-card { border: 1px solid var(--vp-c-divider); border-radius: 12px; padding: 14px 16px; background: var(--vp-c-bg-soft); }
+.pub-card b { display: block; font-size: 15px; margin-bottom: 6px; }
+.pub-card span { font-size: 13px; color: var(--vp-c-text-2); }
+.pub { border-bottom: 1px solid var(--vp-c-divider); padding: 12px 0; }
+.pub-title { font-weight: 600; }
+.pub-meta { font-size: 14px; color: var(--vp-c-text-2); }
+.pub-tags { margin-top: 4px; display: flex; gap: 8px; font-size: 12px; }
+.pub-tags span { border: 1px solid var(--vp-c-divider); border-radius: 10px; padding: 0 8px; color: var(--vp-c-text-2); }
